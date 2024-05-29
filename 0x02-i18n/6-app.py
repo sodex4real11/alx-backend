@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """A simple flask app
 """
+
+
 from flask import Flask, render_template, request, g
 from flask_babel import Babel
+
 
 class Config(object):
     """_summary_
@@ -13,6 +16,7 @@ class Config(object):
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
+
 
 # configure the flask app
 app = Flask(__name__)
